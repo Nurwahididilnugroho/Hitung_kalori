@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Kesehatan</title>
+
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('bg1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navigasi */
+        .navigasi {
+            background-color: #1c6988;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .navigasi a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .navigasi a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Tombol Hamburger */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        .navigasi-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Bagian sambutan */
+        .welcome-section {
+            text-align: left;
+            padding: 50px 20px;
+            background: rgba(27, 71, 131, 0.8);
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            border-spacing: 2px;
+        }
+
+        .welcome-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .welcome-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section h3 {
+            font-size: 24px;
+        }
+
+    
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .navigasi-links {
+                display: none;
+                flex-direction: column;
+                background-color: #1c6988;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                text-align: left;
+            }
+
+            .navigasi a {
+                display: block;
+                padding: 10px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                
+            }
+
+            /* Menu toggle button will show on small screens */
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Toggle menu links */
+            #toggle:checked + .navigasi-links {
+                display: flex;
+            }
+
+            /* Welcome Section */
+            .welcome-section {
+                padding: 20px;
+            }
+
+            .welcome-section h1 {
+                font-size: 28px;
+            }
+
+            .welcome-section p, .welcome-section h3 {
+                font-size: 16px;
+            }
+        }
+
+        /* Checkbox Trick to Open/Close Menu */
+        input[type="checkbox"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <div class="navigasi">
+            <label class="menu-toggle" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="navigasi-links">
+                <a href="hitung_kalori.php">Cek BMR</a>
+                <a href="MSG.php">Rekomendasi Makanan Sehat</a>
+                <a href="selamat_datang.php">Kembali</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Sambutan -->
+    <section class="container welcome-section">
+        <img src="bg1.jpg" alt="Health Image">
+        <h1>Selamat Datang Para Pecinta Hidup Sehat</h1>
+        <p>Semoga dengan adanya literasi ini membuat kita lebih sadar betapa pentingnya menjaga kesehatan sejak dini.</p>
+        <h3>Ayo ikuti terus beritanya!</h3>
+    </section>
+    
+    <section class="container welcome-section">
+        <h3>Kesehatan: Kunci Menjaga Kualitas Hidup</h3>
+        <br>
+        <p>Pentingnya Menjaga Kesehatan Kesehatan adalah salah satu aspek penting 
+            dalam kehidupan. Tanpa kesehatan yang baik, aktivitas sehari-hari bisa 
+            terganggu dan kualitas hidup akan menurun. Menjaga kesehatan adalah tanggung jawab
+            setiap individu. Baik fisik maupun mental, keduanya berperan penting dalam menciptakan 
+            hidup yang seimbang.</p>
+        <p>Kesehatan Fisik <br>
+            Kesehatan fisik erat kaitannya dengan menjaga tubuh tetap bugar dan bebas dari penyakit. 
+            Berikut beberapa cara menjaga kesehatan fisik:
+            <br><br>
+            1. Pola makan sehat <br>
+            Makanan bergizi dan seimbang sangat penting. Konsumsi makanan yang kaya serat, vitamin, mineral, protein, dan lemak sehat dapat membantu tubuh berfungsi dengan optimal. Menghindari makanan olahan dan mengurangi asupan gula, garam, serta lemak jenuh juga penting untuk menjaga keseimbangan nutrisi.
+            <br><br>
+            2. Aktivitas fisik <br>
+            Berolahraga secara rutin membantu meningkatkan sirkulasi darah, menguatkan otot dan tulang, serta mengurangi risiko penyakit kronis seperti jantung, diabetes, dan obesitas. Tidak perlu aktivitas yang berat, bahkan jalan kaki selama 30 menit sehari sudah cukup bermanfaat.
+            <br><br>
+            3. Tidur yang cukup <br>
+            Kualitas tidur yang baik sangat penting untuk regenerasi tubuh dan kesehatan mental. Tidur minimal 7-8 jam setiap malam dapat membantu meningkatkan daya tahan tubuh dan memperbaiki mood.
+            <br>
+            Pemeriksaan kesehatan rutin
+            Memeriksakan kesehatan secara berkala dapat membantu mendeteksi penyakit sejak dini. Deteksi dini memberikan kesempatan lebih baik untuk pengobatan dan mencegah komplikasi serius.</p>
+    </section>
+
+</body>
+</html>
