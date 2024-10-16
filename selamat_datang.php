@@ -11,6 +11,7 @@
             background-blend-mode: overlay; /* Mencampur gambar dengan warna */
             background-size: cover;
             background-position: none;
+            color:white;
         }
 
         

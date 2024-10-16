@@ -7,7 +7,7 @@ if(!$db) {
 } else {
 //   echo "Open database success...\n";
 } 
-// data siswa
+// data pasien
 $db->query("CREATE TABLE  IF NOT EXISTS makanan(
  id INTEGER PRIMARY KEY AUTOINCREMENT,
  nama_makanan TEXT NOT NULL,

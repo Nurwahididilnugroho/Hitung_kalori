@@ -14,6 +14,7 @@
             word-spacing: 2px;
             margin: 0;
             padding: 0;
+            color:white;
         }
 
         .container {

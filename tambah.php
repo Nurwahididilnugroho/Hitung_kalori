@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-blend-mode: overlay; /* Mencampur gambar dengan warna */
             background-size: cover;
             background-position: none;
+            color:white;
         }
 
         .container {
